@@ -46,6 +46,7 @@ script {
 }
 @media (min-width: 210mm) {
   body {
+    zoom: 1.15;
     --tw-bg-opacity: 1;
     background-color: rgb(245 245 245 / var(--tw-bg-opacity)) !important;
   }
@@ -81,6 +82,7 @@ script {
   body {
     padding: 0 !important;
     background-color: transparent !important;
+    zoom: 1 !important;
   }
 
   .page {
