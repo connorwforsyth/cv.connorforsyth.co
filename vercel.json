@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://connorforsyth.co/cv",
+      "permanent": true
+    }
+  ]
 }
