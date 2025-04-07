@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  @media (min-width: 640px) {
+@media (min-width: 640px) {
+  html {
     font-size: 14px;
   }
+}
+
+:root {
   font-family: Geist;
 }
 
@@ -45,8 +48,10 @@ script {
   box-shadow: none;
 }
 @media (min-width: 210mm) {
-  body {
+  html {
     zoom: 1.15;
+  }
+  body {
     --tw-bg-opacity: 1;
     background-color: rgb(245 245 245 / var(--tw-bg-opacity)) !important;
   }
@@ -79,10 +84,12 @@ script {
 }
 
 @media print {
+  html {
+    zoom: 1;
+  }
   body {
     padding: 0 !important;
     background-color: transparent !important;
-    zoom: 1 !important;
   }
 
   .page {
